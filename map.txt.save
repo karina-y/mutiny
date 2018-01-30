@@ -1,0 +1,5 @@
+	EmptyCavePath	StartingRoom	EmptyCavePath	FindDaggerRoom	
+		FindGoldRoom			
+FindCellPhoneRoom	EmptyCavePath	SallyRoom	FindGoldRoom		
+		EmptyCavePath	EmptyCavePath	BowserRoom	FindRocketLauncherRoom
+		EmptyCavePath			
