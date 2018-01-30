@@ -191,18 +191,19 @@ class SallyRoom(EnemyRoom):
                         """
 
 
-class BowserRoom(EnemyRoom):
+class ScallywagRoom(EnemyRoom):
         def __init__(self, x, y):
-                super().__init__(x, y, enemies.Bowser())
+                super().__init__(x, y, enemies.Scallywag())
 
         def intro_text(self):
                 if self.enemy.is_alive():
                         return """
-                        sry princess isn't here, you get bowser instead
+	Avast! Ye who cross Sammy the Scallywag's path may never return!
+	I am loyal to the Kraken and will bring you in dead or alive! ARRGGHHH!!!
                         """
                 else:
                         return """
-                        The corpse of Bowser rots on the ground ....gross
+	The corpse of Sammy the Scallywag rots on the ground ....gross
                         """
 
 

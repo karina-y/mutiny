@@ -6,5 +6,5 @@
 TheBigGiantHeadRoom		EmptyPath	EmptyPath	EmptyPath	FindDaggerRoom
 		FindGoldRoom		EmptyPath	
 FindCellPhoneRoom			EmptyPath	SallyRoom	FindGoldRoom
-		EmptyPath	EmptyPath	BowserRoom	FindRocketLauncherRoom
+		EmptyPath	EmptyPath	ScallywagRoom	FindRocketLauncherRoom
 		StartingRoom			

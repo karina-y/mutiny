@@ -1,5 +1,6 @@
 import world
 from player import Player
+import random
 
 def play():
 	world.load_tiles()
@@ -33,7 +34,9 @@ def play():
 						break
 
 			if not action_found:
-				print("\nYOU CAN'T DO THAT\n")
+				no_action_found = ["\nYOU CAN'T DO THAT\n", "ARGGHH The ocean be a dark place, if ye go that we ye'll fall to yer death\n", "\nOUCH bumped into a wall, ye should stop drinkin so much rum!\n"]
+				print(random.choice(no_action_found))
+				#print("\nYOU CAN'T DO THAT\n")
 
 
 if __name__ == "__main__":
