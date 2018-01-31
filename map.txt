@@ -1,6 +1,6 @@
 		LeaveCaveRoom			
 		TheBossRoom			
-	FindTheRockRoom	EmptyPath	TheRocksEvilTwinRoom	EmptyPath	
+	EmptyPath	EmptyPath	TheRocksEvilTwinRoom	EmptyPath	
 		EmptyPath			
 		EmptyPath			
 TheBigGiantHeadRoom		EmptyPath	EmptyPath	EmptyPath	FindDaggerRoom

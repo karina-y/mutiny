@@ -34,8 +34,13 @@ def play():
 						break
 
 			if not action_found:
-				no_action_found = ["\nYOU CAN'T DO THAT\n", "ARGGHH The ocean be a dark place, if ye go that we ye'll fall to yer death\n", "\nOUCH bumped into a wall, ye should stop drinkin so much rum!\n"]
-				print(random.choice(no_action_found))
+				no_action_found_messages = ["\nYOU CAN'T DO THAT\n", "ARGGHH The ocean be a dark place, if ye go that we ye'll fall to yer death\n", "\nOUCH bumped into a wall, ye should stop drinkin so much rum!\n","\nYOU CAN'T DO THAT\n", "ARGGHH The ocean be a dark place, if ye go that we ye'll fall to yer death\n", "\nOUCH bumped into a wall, ye should stop drinkin so much rum!\n", "\nOH NO YE FELL OFF THE PLANK! CHOWDER HEAD!\n"]
+				no_action_found_message = random.choice(no_action_found_messages)
+
+				if no_action_found_message == "\nOH NO YE FELL OFF THE PLANK! CHOWDER HEAD!\n":
+					player.hp = 0
+
+				print(no_action_found_message)
 				#print("\nYOU CAN'T DO THAT\n")
 
 

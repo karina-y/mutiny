@@ -1,4 +1,5 @@
 import items, enemies, actions, world
+import random
 
 class MapTile:
 	def __init__(self, x, y):
@@ -68,10 +69,10 @@ class StartingRoom(MapTile):
 
 
 
-       		You've just woken up in the hull of the Rogue Keel.
-		The evil Kraken is somewhere on the ship hunting your crew.
-		Find all the members of your crew before the Kraken eats them.
-		"""
+       	You've just woken up in the hull of the Rogue Keel.
+	The evil Kraken is somewhere on the ship hunting your crew.
+	Find all the members of your crew before the Kraken eats them.
+	"""
 
 	def modify_player(self, player):
 		#room has no action on player
@@ -115,9 +116,8 @@ class EnemyRoom(MapTile):
 #plain rooms
 class EmptyPath(MapTile):
 	def intro_text(self):
-		return """
-		Another unremarkable part of the cave. Your loneliness continues to glow like a little glowworm right in your belly
-		"""
+		empty_path_messages = ["\nAnother unremarkable part of the cave.\n", "\nNothing here, although there are some strange noises coming from the walls 0__0\n", "\nJust an empty pathway, gonna have to keep moving\n"]
+		return random.choice(empty_path_messages)
 
 	def modify_player(self, player):
 		#Room has no action on player
@@ -233,17 +233,17 @@ class FindGoldRoom(LootRoom):
                 """
 
 
-class FindTheRockRoom(LootRoom):
-        def __init__(self, x, y):
-                super().__init__(x, y, items.TheRock())
-
-        def intro_text(self):
-                return """
-                You look to the corner and notice an odd shadow
-		is it a boulder? ...a shivering boulder? a huddled creature? no... no, it's THE ROCK
-		that's right, THE Rock
-		he's been looking for a home and it looks like he's found one, congratulations!
-                """
+#class FindTheRockRoom(LootRoom):
+#        def __init__(self, x, y):
+#                super().__init__(x, y, items.TheRock())
+#
+#        def intro_text(self):
+#                return """
+#                You look to the corner and notice an odd shadow
+#		is it a boulder? ...a shivering boulder? a huddled creature? no... no, it's THE ROCK
+#		that's right, THE Rock
+#		he's been looking for a home and it looks like he's found one, congratulations!
+#                """
 
 
 class FindLegLampRoom(LootRoom):

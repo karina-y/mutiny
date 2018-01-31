@@ -32,12 +32,12 @@ class Weapon(Item):
 
 
 #one rare ass kind of weapon
-class TheRock(Weapon):
-	def __init__(self):
-		super().__init__(name="'Rock, The'",
-				description="Do you smell what The Rock is cookin'? If you smeeellllll what The Rock is cookin', The Rock will bludgeon your enemy to death!",
-				value=100,
-				damage=50)
+#class TheRock(Weapon):
+#	def __init__(self):
+#		super().__init__(name="'Rock, The'",
+#				description="Do you smell what The Rock is cookin'? If you smeeellllll what The Rock is cookin', The Rock will bludgeon your enemy to death!",
+#				value=100,
+#				damage=50)
 
 
 class Dagger(Weapon):
